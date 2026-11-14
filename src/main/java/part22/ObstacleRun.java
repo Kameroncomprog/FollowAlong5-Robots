@@ -12,5 +12,15 @@ import mbot.*;
 
 @MBotLab(world = "obstacles")
 public class ObstacleRun {
-
+    // psvm start of the program
+    public static void main(String[] args) {
+        // we assign the value stored in new Rover in to Rover variable named rover
+        Rover rover = new Rover ("Dash");
+        //int moves = rover.driveUntilBlocked(15);
+        //System.out.println("Blocked after " + moves + " moves");
+        // we call method rover.reachGoal()
+        rover.reachGoal();
+        // systme outputs the value stored in rover + str concadenation "reached the goal."
+        System.out.println(rover + " reached the goal");
+    }
 }
